@@ -10,598 +10,146 @@
  * to #include this file.             *
  *************************************/
 
-
- #ifndef typing_h
- #define typing_h
+#ifndef TYPING_H
+ #define TYPING_H
  #include <stdio.h>
  #include <unistd.h>
  
+ // Define default delay (in microseconds)
+ #define DEFAULT_DELAY 300000
  
- // Create lowercase alphabet functions
- void a(void)
- {
-     usleep(300000);
-     printf("a");
-     fflush(stdout);
- }
- void b(void)
- {
-     usleep(500000);
-     printf("b");
-     fflush(stdout);
- }
- void c(void)
- {
-     usleep(500000);
-     printf("c");
-     fflush(stdout);
- }
- void d(void)
- {
-     usleep(300000);
-     printf("d");
-     fflush(stdout);
- }
- void e(void)
- {
-     usleep(400000);
-     printf("e");
-     fflush(stdout);
- }
- void f(void)
- {
-     usleep(200000);
-     printf("f");
-     fflush(stdout);
- }
- void g(void)
- {
-     usleep(300000);
-     printf("g");
-     fflush(stdout);
- }
- void h(void)
- {
-     usleep(300000);
-     printf("h");
-     fflush(stdout);
- }
- void i(void)
- {
-     usleep(400000);
-     printf("i");
-     fflush(stdout);
- }
- void j(void)
- {
-     usleep(200000);
-     printf("j");
-     fflush(stdout);
- }
- void k(void)
- {
-     usleep(300000);
-     printf("k");
-     fflush(stdout);
- }
- void l(void)
- {
-     usleep(300000);
-     printf("l");
-     fflush(stdout);
- }
- void m(void)
- {
-     usleep(500000);
-     printf("m");
-     fflush(stdout);
- }
- void n(void)
- {
-     usleep(500000);
-     printf("n");
-     fflush(stdout);
- }
- void o(void)
- {
-     usleep(400000);
-     printf("o");
-     fflush(stdout);
- }
- void p(void)
- {
-     usleep(400000);
-     printf("p");
-     fflush(stdout);
- }
- void q(void)
- {
-     usleep(400000);
-     printf("q");
-     fflush(stdout);
- }
- void r(void)
- {
-     usleep(400000);
-     printf("r");
-     fflush(stdout);
- }
- void s(void)
- {
-     usleep(300000);
-     printf("s");
-     fflush(stdout);
- }
- void t(void)
- {
-     usleep(400000);
-     printf("t");
-     fflush(stdout);
- }
- void u(void)
- {
-     usleep(400000);
-     printf("u");
-     fflush(stdout);
- }
- void v(void)
- {
-     usleep(500000);
-     printf("v");
-     fflush(stdout);
- }
- void w(void)
- {
-     usleep(400000);
-     printf("w");
-     fflush(stdout);
- }
- void x(void)
- {
-     usleep(500000);
-     printf("x");
-     fflush(stdout);
- }
- void y(void)
- {
-     usleep(400000);
-     printf("y");
-     fflush(stdout);
- }
- void z(void)
- {
-     usleep(500000);
-     printf("z");
+ // Generic character printing function with configurable delay
+ static inline void print_char(char c, unsigned int delay_us) {
+     usleep(delay_us);
+     putchar(c);
      fflush(stdout);
  }
  
- // Create uppercase alphabet functions
- void A(void)
- {
-     usleep(300000);
-     printf("A");
-     fflush(stdout);
- }
- void B(void)
- {
-     usleep(500000);
-     printf("B");
-     fflush(stdout);
- }
- void C(void)
- {
-     usleep(500000);
-     printf("C");
-     fflush(stdout);
- }
- void D(void)
- {
-     usleep(300000);
-     printf("D");
-     fflush(stdout);
- }
- void E(void)
- {
-     usleep(400000);
-     printf("E");
-     fflush(stdout);
- }
- void F(void)
- {
-     usleep(200000);
-     printf("F");
-     fflush(stdout);
- }
- void G(void)
- {
-     usleep(300000);
-     printf("G");
-     fflush(stdout);
- }
- void H(void)
- {
-     usleep(300000);
-     printf("H");
-     fflush(stdout);
- }
- void I(void)
- {
-     usleep(400000);
-     printf("I");
-     fflush(stdout);
- }
- void J(void)
- {
-     usleep(200000);
-     printf("J");
-     fflush(stdout);
- }
- void K(void)
- {
-     usleep(300000);
-     printf("K");
-     fflush(stdout);
- }
- void L(void)
- {
-     usleep(300000);
-     printf("L");
-     fflush(stdout);
- }
- void M(void)
- {
-     usleep(500000);
-     printf("M");
-     fflush(stdout);
- }
- void N(void)
- {
-     usleep(500000);
-     printf("N");
-     fflush(stdout);
- }
- void O(void)
- {
-     usleep(400000);
-     printf("O");
-     fflush(stdout);
- }
- void P(void)
- {
-     usleep(400000);
-     printf("P");
-     fflush(stdout);
- }
- void Q(void)
- {
-     usleep(400000);
-     printf("Q");
-     fflush(stdout);
- }
- void R(void)
- {
-     usleep(400000);
-     printf("R");
-     fflush(stdout);
- }
- void S(void)
- {
-     usleep(300000);
-     printf("S");
-     fflush(stdout);
- }
- void T(void)
- {
-     usleep(400000);
-     printf("T");
-     fflush(stdout);
- }
- void U(void)
- {
-     usleep(400000);
-     printf("U");
-     fflush(stdout);
- }
- void V(void)
- {
-     usleep(500000);
-     printf("V");
-     fflush(stdout);
- }
- void W(void)
- {
-     usleep(400000);
-     printf("W");
-     fflush(stdout);
- }
- void X(void)
- {
-     usleep(500000);
-     printf("X");
-     fflush(stdout);
- }
- void Y(void)
- {
-     usleep(400000);
-     printf("Y");
-     fflush(stdout);
- }
- void Z(void)
- {
-     usleep(500000);
-     printf("Z");
-     fflush(stdout);
+ // Character printing functions with specific delays
+ #define DEFINE_CHAR_FUNCTION(name, character, delay) \
+     static inline void name(void) { \
+         print_char(character, delay); \
+     }
+ 
+ // Define lowercase alphabet functions with specific delays
+ DEFINE_CHAR_FUNCTION(a, 'a', 300000)
+ DEFINE_CHAR_FUNCTION(b, 'b', 500000)
+ DEFINE_CHAR_FUNCTION(c, 'c', 500000)
+ DEFINE_CHAR_FUNCTION(d, 'd', 300000)
+ DEFINE_CHAR_FUNCTION(e, 'e', 400000)
+ DEFINE_CHAR_FUNCTION(f, 'f', 200000)
+ DEFINE_CHAR_FUNCTION(g, 'g', 300000)
+ DEFINE_CHAR_FUNCTION(h, 'h', 300000)
+ DEFINE_CHAR_FUNCTION(i, 'i', 400000)
+ DEFINE_CHAR_FUNCTION(j, 'j', 200000)
+ DEFINE_CHAR_FUNCTION(k, 'k', 300000)
+ DEFINE_CHAR_FUNCTION(l, 'l', 300000)
+ DEFINE_CHAR_FUNCTION(m, 'm', 500000)
+ DEFINE_CHAR_FUNCTION(n, 'n', 500000)
+ DEFINE_CHAR_FUNCTION(o, 'o', 400000)
+ DEFINE_CHAR_FUNCTION(p, 'p', 400000)
+ DEFINE_CHAR_FUNCTION(q, 'q', 400000)
+ DEFINE_CHAR_FUNCTION(r, 'r', 400000)
+ DEFINE_CHAR_FUNCTION(s, 's', 300000)
+ DEFINE_CHAR_FUNCTION(t, 't', 400000)
+ DEFINE_CHAR_FUNCTION(u, 'u', 400000)
+ DEFINE_CHAR_FUNCTION(v, 'v', 500000)
+ DEFINE_CHAR_FUNCTION(w, 'w', 400000)
+ DEFINE_CHAR_FUNCTION(x, 'x', 500000)
+ DEFINE_CHAR_FUNCTION(y, 'y', 400000)
+ DEFINE_CHAR_FUNCTION(z, 'z', 500000)
+ 
+ // Define uppercase alphabet functions
+ DEFINE_CHAR_FUNCTION(A, 'A', 300000)
+ DEFINE_CHAR_FUNCTION(B, 'B', 500000)
+ DEFINE_CHAR_FUNCTION(C, 'C', 500000)
+ DEFINE_CHAR_FUNCTION(D, 'D', 300000)
+ DEFINE_CHAR_FUNCTION(E, 'E', 400000)
+ DEFINE_CHAR_FUNCTION(F, 'F', 200000)
+ DEFINE_CHAR_FUNCTION(G, 'G', 300000)
+ DEFINE_CHAR_FUNCTION(H, 'H', 300000)
+ DEFINE_CHAR_FUNCTION(I, 'I', 400000)
+ DEFINE_CHAR_FUNCTION(J, 'J', 200000)
+ DEFINE_CHAR_FUNCTION(K, 'K', 300000)
+ DEFINE_CHAR_FUNCTION(L, 'L', 300000)
+ DEFINE_CHAR_FUNCTION(M, 'M', 500000)
+ DEFINE_CHAR_FUNCTION(N, 'N', 500000)
+ DEFINE_CHAR_FUNCTION(O, 'O', 400000)
+ DEFINE_CHAR_FUNCTION(P, 'P', 400000)
+ DEFINE_CHAR_FUNCTION(Q, 'Q', 400000)
+ DEFINE_CHAR_FUNCTION(R, 'R', 400000)
+ DEFINE_CHAR_FUNCTION(S, 'S', 300000)
+ DEFINE_CHAR_FUNCTION(T, 'T', 400000)
+ DEFINE_CHAR_FUNCTION(U, 'U', 400000)
+ DEFINE_CHAR_FUNCTION(V, 'V', 500000)
+ DEFINE_CHAR_FUNCTION(W, 'W', 400000)
+ DEFINE_CHAR_FUNCTION(X, 'X', 500000)
+ DEFINE_CHAR_FUNCTION(Y, 'Y', 400000)
+ DEFINE_CHAR_FUNCTION(Z, 'Z', 500000)
+ 
+ // Define number functions
+ DEFINE_CHAR_FUNCTION(zero, '0', 300000)
+ DEFINE_CHAR_FUNCTION(one, '1', 300000)
+ DEFINE_CHAR_FUNCTION(two, '2', 300000)
+ DEFINE_CHAR_FUNCTION(three, '3', 300000)
+ DEFINE_CHAR_FUNCTION(four, '4', 300000)
+ DEFINE_CHAR_FUNCTION(five, '5', 300000)
+ DEFINE_CHAR_FUNCTION(six, '6', 300000)
+ DEFINE_CHAR_FUNCTION(seven, '7', 300000)
+ DEFINE_CHAR_FUNCTION(eight, '8', 300000)
+ DEFINE_CHAR_FUNCTION(nine, '9', 300000)
+ 
+ // Define symbol functions
+ DEFINE_CHAR_FUNCTION(bang, '!', 300000)
+ DEFINE_CHAR_FUNCTION(at, '@', 300000)
+ DEFINE_CHAR_FUNCTION(hash, '#', 300000)
+ DEFINE_CHAR_FUNCTION(dollar, '$', 300000)
+ DEFINE_CHAR_FUNCTION(percent, '%', 300000)
+ DEFINE_CHAR_FUNCTION(caret, '^', 300000)
+ DEFINE_CHAR_FUNCTION(ampersand, '&', 300000)
+ DEFINE_CHAR_FUNCTION(asterisk, '*', 300000)
+ DEFINE_CHAR_FUNCTION(leftparen, '(', 300000)
+ DEFINE_CHAR_FUNCTION(rightparen, ')', 300000)
+ DEFINE_CHAR_FUNCTION(dash, '-', 300000)
+ DEFINE_CHAR_FUNCTION(underscore, '_', 300000)
+ DEFINE_CHAR_FUNCTION(plus, '+', 300000)
+ DEFINE_CHAR_FUNCTION(equals, '=', 300000)
+ DEFINE_CHAR_FUNCTION(leftbrace, '{', 300000)
+ DEFINE_CHAR_FUNCTION(rightbrace, '}', 300000)
+ DEFINE_CHAR_FUNCTION(leftbracket, '[', 300000)
+ DEFINE_CHAR_FUNCTION(rightbracket, ']', 300000)
+ DEFINE_CHAR_FUNCTION(bar, '|', 300000)
+ DEFINE_CHAR_FUNCTION(backslash, '\\', 300000)
+ DEFINE_CHAR_FUNCTION(semicolon, ';', 300000)
+ DEFINE_CHAR_FUNCTION(colon, ':', 300000)
+ DEFINE_CHAR_FUNCTION(singlequote, '\'', 300000)
+ DEFINE_CHAR_FUNCTION(doublequote, '"', 300000)
+ DEFINE_CHAR_FUNCTION(comma, ',', 300000)
+ DEFINE_CHAR_FUNCTION(period, '.', 300000)
+ DEFINE_CHAR_FUNCTION(slash, '/', 300000)
+ DEFINE_CHAR_FUNCTION(question, '?', 300000)
+ DEFINE_CHAR_FUNCTION(tilde, '~', 300000)
+ DEFINE_CHAR_FUNCTION(leftangle, '<', 300000)
+ DEFINE_CHAR_FUNCTION(rightangle, '>', 300000)
+ DEFINE_CHAR_FUNCTION(backtick, '`', 300000)
+ 
+ // Define special characters
+ static inline void space(void) {
+     print_char(' ', 300000);
  }
  
- // Create number functions
- void zero(void)
- {
-     usleep(300000);
-     printf("0");
-     fflush(stdout);
- }
- void one(void)
- {
-     usleep(300000);
-     printf("1");
-     fflush(stdout);
- }
- void two(void)
- {
-     usleep(300000);
-     printf("2");
-     fflush(stdout);
- }
- void three(void)
- {
-     usleep(300000);
-     printf("3");
-     fflush(stdout);
- }
- void four(void)
- {
-     usleep(300000);
-     printf("4");
-     fflush(stdout);
- }
- void five(void)
- {
-     usleep(300000);
-     printf("5");
-     fflush(stdout);
- }
- void six(void)
- {
-     usleep(300000);
-     printf("6");
-     fflush(stdout);
- }
- void seven(void)
- {
-     usleep(300000);
-     printf("7");
-     fflush(stdout);
- }
- void eight(void)
- {
-     usleep(300000);
-     printf("8");
-     fflush(stdout);
- }
- void nine(void)
- {
-     usleep(300000);
-     printf("9");
-     fflush(stdout);
+ static inline void newline(void) {
+     print_char('\n', 300000);
  }
  
- // Create symbol functions
- void bang(void)
- {
-     usleep(300000);
-     printf("!");
-     fflush(stdout);
- }
- void at(void)
- {
-     usleep(300000);
-     printf("@");
-     fflush(stdout);
- }
- void hash(void)
- {
-     usleep(300000);
-     printf("#");
-     fflush(stdout);
- }
- void dollar(void)
- {
-     usleep(300000);
-     printf("$");
-     fflush(stdout);
- }
- void percent(void)
- {
-     usleep(300000);
-     printf("%%");
-     fflush(stdout);
- }
- void caret(void)
- {
-     usleep(300000);
-     printf("^");
-     fflush(stdout);
- }
- void ampersand(void)
- {
-     usleep(300000);
-     printf("&");
-     fflush(stdout);
- }
- void asterisk(void)
- {
-     usleep(300000);
-     printf("*");
-     fflush(stdout);
- }
- void leftparen(void)
- {
-     usleep(300000);
-     printf("(");
-     fflush(stdout);
- }
- void rightparen(void)
- {
-     usleep(300000);
-     printf(")");
-     fflush(stdout);
- }
- void dash(void)
- {
-     usleep(300000);
-     printf("-");
-     fflush(stdout);
- }
- void underscore(void)
- {
-     usleep(300000);
-     printf("_");
-     fflush(stdout);
- }
- void plus(void)
- {
-     usleep(300000);
-     printf("+");
-     fflush(stdout);
- }
- void equals(void)
- {
-     usleep(300000);
-     printf("=");
-     fflush(stdout);
- }
- void leftbrace(void)
- {
-     usleep(300000);
-     printf("{");
-     fflush(stdout);
- }
- void rightbrace(void)
- {
-     usleep(300000);
-     printf("}");
-     fflush(stdout);
- }
- void leftbracket(void)
- {
-     usleep(300000);
-     printf("[");
-     fflush(stdout);
- }
- void rightbracket(void)
- {
-     usleep(300000);
-     printf("]");
-     fflush(stdout);
- }
- void bar(void)
- {
-     usleep(300000);
-     printf("|");
-     fflush(stdout);
- }
- void backslash(void)
- {
-     usleep(300000);
-     printf("\\");
-     fflush(stdout);
- }
- void semicolon(void)
- {
-     usleep(300000);
-     printf(";");
-     fflush(stdout);
- }
- void colon(void)
- {
-     usleep(300000);
-     printf(":");
-     fflush(stdout);
- }
- void singlequote(void)
- {
-     usleep(300000);
-     printf("'");
-     fflush(stdout);
- }
- void doublequote(void)
- {
-     usleep(300000);
-     printf("\"");
-     fflush(stdout);
- }
- void comma(void)
- {
-     usleep(300000);
-     printf(",");
-     fflush(stdout);
- }
- void period(void)
- {
-     usleep(300000);
-     printf(".");
-     fflush(stdout);
- }
- void slash(void)
- {
-     usleep(300000);
-     printf("/");
-     fflush(stdout);
- }
- void question(void)
- {
-     usleep(300000);
-     printf("?");
-     fflush(stdout);
- }
- void tilde(void)
- {
-     usleep(300000);
-     printf("~");
-     fflush(stdout);
- }
- void leftangle(void)
- {
-     usleep(300000);
-     printf("<");
-     fflush(stdout);
- }
- void rightangle(void)
- {
-     usleep(300000);
-     printf(">");
-     fflush(stdout);
- }
- void backtick(void)
- {
-     usleep(300000);
-     printf("`");
-     fflush(stdout);
- }
- void space(void)
- {
-     usleep(300000);
-     printf(" ");
-     fflush(stdout);
- }
- void newline(void)
- {
-     usleep(300000);
-     printf("\n");
-     fflush(stdout);
+ // Function to print a string with typing effect
+ void type_string(const char *str, unsigned int delay_us) {
+     while (*str) {
+         print_char(*str++, delay_us);
+     }
  }
  
- // Define lowercase alphabet
+ // Define lowercase alphabet macros
  #define a a();
  #define b b();
  #define c c();
@@ -629,7 +177,7 @@
  #define y y();
  #define z z();
  
- // Define uppercase alphabet
+ // Define uppercase alphabet macros
  #define A A();
  #define B B();
  #define C C();
@@ -657,7 +205,7 @@
  #define Y Y();
  #define Z Z();
  
- // Define numbers
+ // Define number macros
  #define zero zero();
  #define one one();
  #define two two();
@@ -669,7 +217,7 @@
  #define eight eight();
  #define nine nine();
  
- // Define symbols
+ // Define symbol macros
  #define bang bang();
  #define at at();
  #define hash hash();
@@ -684,10 +232,6 @@
  #define underscore underscore();
  #define plus plus();
  #define equals equals();
- 
- //Define others
- #define space space();
- #define newline newline();
  #define leftbrace leftbrace();
  #define rightbrace rightbrace();
  #define leftbracket leftbracket();
@@ -706,4 +250,11 @@
  #define rightangle rightangle();
  #define backtick backtick();
  
- #endif
+ // Define other macros
+ #define space space();
+ #define newline newline();
+ 
+ // Convenient macro to type a whole string
+ #define typestring(str, delay) typestring(str, delay);
+ 
+ #endif /* TYPING_H */
