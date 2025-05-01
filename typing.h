@@ -14,7 +14,7 @@
  #define TYPING_H
  #include <stdio.h>
  #include <unistd.h>
- #define DEFAULT_DELAY 300000
+ #define default 50000
  
  // Generic character printing function with configurable delay
  static inline void print(char c, unsigned int delay_us) {

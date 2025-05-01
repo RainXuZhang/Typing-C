@@ -14,6 +14,6 @@
  int main()
  {
      H e l l o comma space w o r l d bang newline
-     typestring("Hello, world!", 50000); newline
+     typestring("Hello, world!", default); newline
      return (0);
  }

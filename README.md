@@ -12,7 +12,7 @@ Create a .c file. At the top, add `#include <typing.h>`.
 Then type as follows:
 `int main()
 {
-  H();i();exclamation();endline();
+  H e l l o comma space w o r l d bang newline
   return(0);
 }`
 Save.
@@ -21,7 +21,7 @@ Save.
 Compile it using `gcc typing.c -o typing`.
 
 # Step 5:
-Run the file. Voila! It types out `Hi!`, and then adds a new line.
+Run the file. Voila! It types out `Hello, world!`, and then adds a new line.
 
 # Character Guide:
 
@@ -64,6 +64,8 @@ period (.); slash (/);
 leftangle (<); rightangle (>);
 backtick (`); tilde (~);
 question (?);
-
 Other:
 space ( ); newline (\n);
+
+You can also type full strings that have the same delay using one command:
+`typestring("put string here", time(e.g. 300000)/default(50000ms))
