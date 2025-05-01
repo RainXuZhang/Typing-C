@@ -1,4 +1,4 @@
-# Typing-C (2nd Edition)
+# Typing-C (3rd Edition)
 
 # User guide (Linux):
 # Step 1:
