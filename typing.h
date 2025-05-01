@@ -1,12 +1,12 @@
 /************************************
- * typing.h                         *
+ * Typing-C                         *
+ * File: typing.h                   *
  * --------                         *
  *                                  *
  * This file is the header file for *
  * the typing.c file. It contains   *
  * all functions and #defines.      *
  ***********************************/
-
 
 
  #ifndef typing_h

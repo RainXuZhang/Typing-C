@@ -1,5 +1,6 @@
 /**************************************
- * typing.c                           *
+ * Typing-C                           *
+ * File: typing.c                     *
  * --------                           *
  *                                    *
  * Available words:                   *
