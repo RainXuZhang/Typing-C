@@ -14,12 +14,10 @@
  #define TYPING_H
  #include <stdio.h>
  #include <unistd.h>
- 
- // Define default delay (in microseconds)
  #define DEFAULT_DELAY 300000
  
  // Generic character printing function with configurable delay
- static inline void print_char(char c, unsigned int delay_us) {
+ static inline void print(char c, unsigned int delay_us) {
      usleep(delay_us);
      putchar(c);
      fflush(stdout);
@@ -135,17 +133,17 @@
  
  // Define special characters
  static inline void space(void) {
-     print_char(' ', 300000);
+     print(' ', 300000);
  }
  
  static inline void newline(void) {
-     print_char('\n', 300000);
+     print('\n', 300000);
  }
  
  // Function to print a string with typing effect
  void type_string(const char *str, unsigned int delay_us) {
      while (*str) {
-         print_char(*str++, delay_us);
+         print(*str++, delay_us);
      }
  }
  
@@ -257,4 +255,4 @@
  // Convenient macro to type a whole string
  #define typestring(str, delay) typestring(str, delay);
  
- #endif /* TYPING_H */
+ #endif
