@@ -50,7 +50,7 @@
  * question (?);                      *
  *                                    *
  * Other:                             *
- * space ( ); endline (\n);           *
+ * space ( ); newline (\n);           *
  *************************************/
 
 
@@ -637,7 +637,7 @@
      printf(" ");
      fflush(stdout);
  }
- void endline(void)
+ void newline(void)
  {
      usleep(300000);
      printf("\n");

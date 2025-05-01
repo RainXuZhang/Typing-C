@@ -66,4 +66,4 @@ backtick (`); tilde (~);
 question (?);
 
 Other:
-space ( ); endline (\n);
+space ( ); newline (\n);
