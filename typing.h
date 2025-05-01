@@ -8,7 +8,6 @@
  * all functions and #defines.      *
  ***********************************/
 
-
  #ifndef typing_h
  #define typing_h
  #include <stdio.h>
