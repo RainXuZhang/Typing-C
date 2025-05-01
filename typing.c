@@ -5,8 +5,8 @@
  *                                  *
  * This file is just a test.        *
  *                                  *
- * See the README.md or the typing.h*
- * file for more information.       *
+ * See the README.md file for more  *
+ * information.                     *
  ***********************************/
 
  #include "typing.h"
