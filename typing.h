@@ -26,7 +26,7 @@
  // Character printing functions with specific delays
  #define DEFINE_CHAR_FUNCTION(name, character, delay) \
      static inline void name(void) { \
-         print_char(character, delay); \
+         print(character, delay); \
      }
  
  // Define lowercase alphabet functions with specific delays
@@ -141,7 +141,7 @@
  }
  
  // Function to print a string with typing effect
- void type_string(const char *str, unsigned int delay_us) {
+ void typestring(const char *str, unsigned int delay_us) {
      while (*str) {
          print(*str++, delay_us);
      }
