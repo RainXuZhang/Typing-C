@@ -248,7 +248,7 @@
  #define rightangle rightangle();
  #define backtick backtick();
  
- // Define others
+ // Define other characters
  #define space space();
  #define newline newline();
  
