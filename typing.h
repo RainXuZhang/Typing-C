@@ -139,6 +139,10 @@
  static inline void newline(void) {
      print('\n', 300000);
  }
+
+ static inline void creturn(void) {
+     print('\r', 300000);
+ }
  
  // Function to print a string with typing effect
  void typestring(const char *str, unsigned int delay_us) {
@@ -251,6 +255,7 @@
  // Define other characters
  #define space space();
  #define newline newline();
+ #define creturn creturn();
  
  // Convenient command for typing a string with a delay
  #define typestring(str, delay) typestring(str, delay);
