@@ -65,7 +65,7 @@ leftangle (<); rightangle (>);
 backtick (`); tilde (~);
 question (?);
 Other:
-space ( ); newline (\n);
+space ( ); newline (\n); creturn (Carriage return);
 
 You can also type full strings that have the same delay using one command:
 `typestring("*string*", *time*(e.g. *300000*)/*default*(*50000*))
