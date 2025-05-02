@@ -68,4 +68,5 @@ Other:
 space ( ); newline (\n);
 
 You can also type full strings that have the same delay using one command:
-`typestring("put string here", time(e.g. 300000)/default(50000ms))
+`typestring("*string*", *time*(e.g. *300000*)/*default*(*50000*))
+The time is in microseconds (1000000 microseconds to 1 second)
