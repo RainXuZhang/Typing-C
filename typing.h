@@ -147,7 +147,7 @@
      }
  }
  
- // Define lowercase alphabet macros
+ // Define lowercase alphabet
  #define a a();
  #define b b();
  #define c c();
@@ -175,7 +175,7 @@
  #define y y();
  #define z z();
  
- // Define uppercase alphabet macros
+ // Define uppercase alphabet
  #define A A();
  #define B B();
  #define C C();
@@ -203,7 +203,7 @@
  #define Y Y();
  #define Z Z();
  
- // Define number macros
+ // Define numbers
  #define zero zero();
  #define one one();
  #define two two();
@@ -215,7 +215,7 @@
  #define eight eight();
  #define nine nine();
  
- // Define symbol macros
+ // Define symbol
  #define bang bang();
  #define at at();
  #define hash hash();
@@ -248,11 +248,11 @@
  #define rightangle rightangle();
  #define backtick backtick();
  
- // Define other macros
+ // Define others
  #define space space();
  #define newline newline();
  
- // Convenient macro to type a whole string
+ // Convenient command for typing a string with a delay
  #define typestring(str, delay) typestring(str, delay);
  
  #endif
