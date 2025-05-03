@@ -257,7 +257,7 @@
  #define newline newline();
  #define creturn creturn();
  
- // Convenient command for typing a string with a delay
+ // Convenient command for typing a string with delay
  #define typestring(str, delay) typestring(str, delay);
  
  #endif
